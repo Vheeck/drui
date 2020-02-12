@@ -43,9 +43,9 @@ nav > div > div:nth-child(1) {
 }
 
 .nav-title {
-    margin: 0px;
+    margin-left: 1.5em;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .nav-links {
@@ -60,21 +60,22 @@ nav > div > div:nth-child(1) {
 
 .nav-link {
     display: block;
-    padding: 0.8em 1.2em;
-    cursor: pointer;
-    transition: 500ms;
 }
 
-.nav-link.active {
+.nav-link.active > div {
     background-color: #709cc9;
-    border-left: 4px #ffffff solid;
+    border-left: 4px #f2fef0 solid;
 }
 
 .nav-link:hover {
     background-color: #709cc9;
 }
 
-.nav-link {
+.nav-link > div {
+    display: block;
+    padding: 0.8em 1.2em;
+    cursor: pointer;
+    transition: 500ms;
     display: grid;
     grid-template-columns: 1fr 6fr;
 }
@@ -83,6 +84,36 @@ nav > div > div:nth-child(1) {
     text-decoration: none;
     color: #ffffff;
     font-weight: 100;
+}
+
+.nav-link > ul {
+    grid-column: span 2;
+    background-color: #f2fef0;
+    color: #183545;
+}
+
+.nav-link > ul > li {
+    padding: 0.4em 1em 0.4em 0em;
+}
+
+.nav-link > ul > li:hover {
+    background-color: #f2fef0;
+}
+
+.nav-link > ul > li:hover a {
+    font-weight: bold;
+    transition: 500ms;
+}
+
+.nav-link > ul > li.active a {
+    font-weight: bold;
+    transition: 500ms;
+}
+
+.nav-link > ul a {
+    color: #183545;
+    transition: 500ms;
+    font-size: 0.8em;
 }
 
 aside {
@@ -321,6 +352,7 @@ aside hr {
     background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0px 6px 6px 0px #bfbfbf;
+    overflow: hidden;
 }
 
 button, .btn {
@@ -451,11 +483,20 @@ input[type="submit"]:hover {
     margin: auto;
 }
 
-.form > div {
-    padding: 3em 4em 6em 4em;
+.form .header {
+    margin-top: -4em;
+    margin-bottom: 0px;
+}
+
+.form .content {
+    padding: 0.6em 4em 4em 4em;
 }
 
 .form .note {
     font-weight: bold;
     margin: 1em 0em;
+}
+
+.form input[type="submit"] {
+    margin: 3em 0em;
 }
