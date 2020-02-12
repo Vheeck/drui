@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -8,7 +9,7 @@ body {
     padding: 0px;
     margin: 0px;
     display: grid;
-    grid-template-columns: 1.5fr 5fr;
+    grid-template-columns: 1.5fr 6fr;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -85,7 +86,7 @@ aside {
 
 main {
     grid-column: span 1;
-    padding: 4em 5em 0em 1em;
+    padding: 4em 5em 4em 1em;
     display: grid;
     grid-template-columns: 7fr 3fr;
     grid-gap: 1.6em;
@@ -182,6 +183,72 @@ aside hr {
 .banner p {
     color: #dbffff;
     font-weight: lighter;
+}
+
+.section-2, .section-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+}
+
+.section-2 h1, .section-3 h1 {
+    color: #000000;
+}
+
+.section-2 > div {
+    display: grid;
+    grid-template-rows: 1.5em 1.5em 4.5fr 6fr;
+    text-align: center;
+    padding: 1em 2em;
+}
+
+.section-2 .title {
+    font-weight: bold;
+    color: #343434;
+    text-align: center;
+}
+
+.section-2 .sub-title {
+    font-weight: bold;
+    color: #4b759b;
+    text-align: center;
+}
+
+.view-details {
+    background-color: #2573be;
+    color: #ffffff;
+    border-radius: 50%;
+    width: 5em;
+    height: 5em;
+    border: none;
+    margin: auto;
+}
+
+.section-3 > div {
+    text-align: center;
+    padding: 3em 0em;
+    display: grid;
+    grid-template-rows: 2.5em 1em;
+}
+
+.table {
+    display: grid;
+    grid-template-rows: auto;
+    grid-gap: 1em;
+}
+
+.tr {
+    display: grid;
+    grid-template-columns: 1fr 5fr 4fr;
+    padding: 1em;
+}
+
+.tr > span:nth-child(1) {
+    text-align: center;
+}
+
+.thead * {
+    font-weight: bold;
 }
 
 .appointments {
