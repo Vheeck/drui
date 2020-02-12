@@ -177,6 +177,9 @@ aside hr {
     padding: 1em 3em 2em 3em;
     color: #e4fcff;
     background-color: #01396c !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     box-shadow: unset !important;
 }
 
