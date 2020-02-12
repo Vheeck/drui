@@ -1,0 +1,268 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f7f7f7;
+    color: #4c4c4c;
+    padding: 0px;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 1.5fr 5fr;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0px;
+}
+
+hr {
+    margin: 0px;
+    border-style: solid;
+    border-color: #dadada;
+    border-top-width: 1px;
+}
+
+nav {
+    grid-column: span 2;
+    padding: 1em;
+}
+
+nav .btn {
+    margin: 0em 0.8em;
+}
+
+nav > div > div:nth-child(1) {
+    text-align: right;
+    padding-right: 6em;
+}
+
+.nav-title {
+    margin: 0px;
+}
+
+.nav-links {
+    padding: 2em 0em;
+    background-color: #01396c;
+}
+
+.nav-links > ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+.nav-link {
+    display: block;
+    padding: 0.8em 1.2em;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+.nav-link.active {
+    background-color: #709cc9;
+    border-left: 4px #ffffff solid;
+}
+
+.nav-link:hover {
+    background-color: #709cc9;
+}
+
+.nav-link {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+}
+
+.nav-link a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 100;
+}
+
+aside {
+    grid-column: span 1;
+    padding: 1em;
+}
+
+main {
+    grid-column: span 1;
+    padding: 4em 5em 0em 1em;
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+    grid-gap: 1.6em;
+}
+
+aside .header {
+    font-size: 1.4em;
+    text-align: right;
+    padding: 0.6em 1.6em;
+    color: #def5ff;
+}
+
+aside .hr {
+    padding: 0em 1em;
+}
+
+aside .hr hr {
+    border-color: #c2e4ff;
+}
+aside > div {
+    border-radius: 8px;
+    overflow: hidden;
+    color: #ffffff;
+}
+
+aside > div > .profile-section {
+    background-color: #709cc9;
+    color: #ffffff;
+}
+
+aside > div > .divider {
+    background-color: #01396c;
+    color: #ffffff;
+}
+
+aside > div > .aside-nav {
+    background-color: #01396c;
+    color: #ffffff;
+}
+
+aside .profile {
+    padding: 4em 1em 0em 1em;
+}
+
+aside .profile > div {
+    display: grid;
+    grid-template-columns: 1fr 1.8fr;
+    grid-gap: 1em;
+}
+
+aside .profile .profile-img {
+    width: 6em;
+    height: 6em;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+
+aside .profile .profile-info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+aside hr {
+    border-color: #ffffff;
+}
+
+.main-section {
+    display: grid;
+    grid-template-rows: auto;
+    grid-gap: 1.6em;
+}
+
+.banner {
+    padding: 1em 3em 2em 3em;
+    color: #e4fcff;
+    background-color: #01396c !important;
+    box-shadow: unset !important;
+}
+
+.banner > * {
+    margin: 1em 0;
+}
+
+.banner hr {
+    border-color: #a3cbef;
+}
+
+.banner .header {
+    font-weight: 500;
+    margin-bottom: 1.5em;
+}
+
+.banner p {
+    color: #dbffff;
+    font-weight: lighter;
+}
+
+.appointments {
+    padding: 0.02em 1.4em 1.6em 1.4em;
+}
+
+.appointments > .header {
+    font-size: 1.2em;
+    font-weight: 600;
+    text-align: center;
+    margin: 1.2em 0em;
+}
+
+.appointments > .sub-header {
+    font-weight: 600;
+    margin: 1.2em 0em;
+}
+
+.appointments > .list {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0.4em;
+}
+
+.appointment {
+    padding: 0.6em 1em;
+    box-shadow: 0px 0px 4px 0px #d7d7d7 !important;
+    border-color: #d7d7d7;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.appointment > p {
+    font-weight: 600;
+    margin: 0px;
+    color: #525252;
+}
+
+.appointment > span {
+    font-weight: 600;
+    font-size: 0.6em;
+    color: #9f9f9f;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 6px 6px 0px #bfbfbf;
+}
+
+button, .btn {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: #1a3552;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 0.5em 0.8em;
+    color: #1a3552;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 500ms;
+}
+
+button:hover, .btn:hover {
+    border-color: #1a3552;
+    background-color: #003b71;
+    color: #ffffff;
+}
+
+.btn.fill {
+    border-color: #1a3552;
+    background-color: #003b71;
+    color: #ffffff;
+}
+
+button {
+    border-color: #1a3552;
+}
+
+.nav-title {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: sans-serif;
+}
