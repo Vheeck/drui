@@ -10,7 +10,6 @@ body {
     margin: 0px;
     display: grid;
     grid-template-columns: 1.5fr 6fr;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -27,6 +26,11 @@ hr {
 nav {
     grid-column: span 2;
     padding: 1em;
+}
+
+nav .search {
+    color: #003b71;
+    border: none;
 }
 
 nav .btn {
@@ -110,6 +114,7 @@ aside > div {
     border-radius: 8px;
     overflow: hidden;
     color: #ffffff;
+    height: inherit;
 }
 
 aside > div > .profile-section {
@@ -148,6 +153,10 @@ aside .profile .profile-info {
     display: flex;
     justify-content: center;
     flex-direction: column;
+}
+
+aside .profile .profile-info > * {
+    padding: 0.3em 0em;
 }
 
 aside hr {
@@ -231,6 +240,10 @@ aside hr {
     grid-template-rows: 2.5em 1em;
 }
 
+.section-4 .header {
+    padding: 0.4em 0em;
+}
+
 .table {
     display: grid;
     grid-template-rows: auto;
@@ -249,6 +262,10 @@ aside hr {
 
 .thead * {
     font-weight: bold;
+}
+
+.table span {
+    font-size: 0.8em;
 }
 
 .appointments {
@@ -331,5 +348,4 @@ button {
 .nav-title {
     text-transform: uppercase;
     font-weight: 600;
-    font-family: sans-serif;
 }
