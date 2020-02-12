@@ -44,6 +44,8 @@ nav > div > div:nth-child(1) {
 
 .nav-title {
     margin: 0px;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
 .nav-links {
@@ -91,6 +93,8 @@ aside {
 main {
     grid-column: span 1;
     padding: 4em 5em 4em 1em;
+}
+main > .home {
     display: grid;
     grid-template-columns: 7fr 3fr;
     grid-gap: 1.6em;
@@ -345,7 +349,110 @@ button {
     border-color: #1a3552;
 }
 
-.nav-title {
+input {
+    color: #4d4d4d;
+    border-color: #a9a9a9;
+    border-radius: 6px;
+    border-style: solid;
+    border-width: 2px;
+    width: 100%;
+    padding: 0.8em 2em;
+    outline: none;
+}
+
+input::placeholder {
+    color: #a9a9a9;
+}
+
+input[type="submit"] {
+    background-color: #2572ba;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    width: max-content;
+    padding: 0.8em 3.6em;
+    float: right;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    transition: 500ms;
+}
+
+input[type="submit"]:hover {
+    background-color: #003b71;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+/* Patient Vitals */
+
+.form-group {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 1em;
+}
+
+.col-1 {
+    grid-column: span 1;
+}
+
+.col-2 {
+    grid-column: span 2;
+}
+
+.col-3 {
+    grid-column: span 3;
+}
+
+.col-4 {
+    grid-column: span 4;
+}
+
+.col-5 {
+    grid-column: span 5;
+}
+
+.col-6 {
+    grid-column: span 6;
+}
+
+.col-7 {
+    grid-column: span 7;
+}
+
+.col-8 {
+    grid-column: span 8;
+}
+
+.col-9 {
+    grid-column: span 9;
+}
+
+.col-10 {
+    grid-column: span 10;
+}
+
+.col-11 {
+    grid-column: span 11;
+}
+
+.col-12 {
+    grid-column: span 12;
+}
+
+.form {
+    width: 70%;
+    margin: auto;
+}
+
+.form > div {
+    padding: 3em 4em 6em 4em;
+}
+
+.form .note {
+    font-weight: bold;
+    margin: 1em 0em;
 }
