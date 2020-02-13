@@ -94,6 +94,7 @@ nav > div > div:nth-child(1) {
 
 .nav-link > ul > li {
     padding: 0.4em 1em 0.4em 0em;
+    cursor: pointer;
 }
 
 .nav-link > ul > li:hover {
@@ -102,18 +103,24 @@ nav > div > div:nth-child(1) {
 
 .nav-link > ul > li:hover a {
     font-weight: bold;
-    transition: 500ms;
 }
 
 .nav-link > ul > li.active a {
     font-weight: bold;
-    transition: 500ms;
 }
 
 .nav-link > ul a {
     color: #183545;
-    transition: 500ms;
     font-size: 0.8em;
+    width: 100%;
+}
+
+.dropdown-content {
+    display: none;
+}
+
+.dropdown-content.toggled {
+    display: block;
 }
 
 aside {

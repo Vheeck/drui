@@ -55,14 +55,22 @@
                     <li class="nav-link active">
                         <div>
                             <i class="fas fa-home"></i>
-                            <a href="#">Dashboard</a>
+                            <a href="index.html">Dashboard</a>
                         </div>
                     </li>
-                    <li class="nav-link">
+                    <li class="nav-link dropdown" data-toggled="false">
                         <div>
                             <i class="fas fa-user-friends"></i>
-                            <a href="#">Patient Registration</a>
+                            <a>Patient Registration</a>
                         </div>
+                        <ul class="dropdown-content">
+                            <li class="nav-link">
+                                <a href="#">Patient Demo-graphical Details</a>
+                            </li>
+                            <li class="nav-link">
+                                <a href="patient-vitals.html">Patient Vitals</a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="nav-link">
                         <div>
@@ -201,5 +209,6 @@
             </div>
         </div>
     </main>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
