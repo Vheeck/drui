@@ -1,21 +1,21 @@
 let $ = (selector) => document.querySelector(selector);
 let _ = (selector) => document.querySelectorAll(selector);
 
-let dropdowns = _('.dropdown-content');
-let activeDropdown = _('.dropdown.active');
+let xmenus = _('.xmenu-content');
+let activexmenu = _('.xmenu.active');
 
-let activateDropdown = () => {
+let activatexmenu = () => {
 
-    if (dropdowns) {
-        dropdowns.forEach(dropdown => {
-            dropdown.parentElement.addEventListener('click', () => {
-                if (dropdown.parentElement.dataset.toggled == 'true') {
-                    dropdown.parentElement.dataset.toggled = 'false';
-                    dropdown.classList.remove('toggled');
+    if (xmenus) {
+        xmenus.forEach(xmenu => {
+            xmenu.parentElement.addEventListener('click', () => {
+                if (xmenu.parentElement.dataset.toggled == 'true') {
+                    xmenu.parentElement.dataset.toggled = 'false';
+                    xmenu.classList.remove('toggled');
                 }
                 else {
-                    dropdown.parentElement.dataset.toggled = 'true';
-                    dropdown.classList.add('toggled');
+                    xmenu.parentElement.dataset.toggled = 'true';
+                    xmenu.classList.add('toggled');
                 }
             });
         });
@@ -23,5 +23,16 @@ let activateDropdown = () => {
 
 }
 
-activateDropdown();
-activeDropdown[0].click();
+activatexmenu();
+activexmenu[0].click();
+
+let inputControls = _('.input-control input');
+
+inputControls.forEach(input => {
+    input.addEventListener('focus', () => {
+        input.parentElement.classList.add('focus');
+    });
+    input.addEventListener('blur', () => {
+        input.parentElement.classList.remove('focus');
+    });
+});

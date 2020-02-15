@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Picker</title>
+    <link rel="stylesheet" href="assets/css/calender.css">
+</head>
+<body>
+    
+    <div class="calender" style="position:absolute;">
+        <table>
+            <thead>
+                <tr>
+                    <td><i id="prev" class="fas fa-arrow-circle-left"></i></td>
+                    <td colspan="5">
+                        <select name="month" id="month">
+                            <option value="0" id="0">January</option>
+                            <option value="1" id="1">Februrary</option>
+                            <option value="2" id="2">March</option>
+                            <option value="3" id="3">April</option>
+                            <option value="4" id="4">May</option>
+                            <option value="5" id="5">June</option>
+                            <option value="6" id="6" selected >July</option>
+                            <option value="7" id="7">August</option>
+                            <option value="8" id="8">September</option>
+                            <option value="9" id="9">October</option>
+                            <option value="10" id="10">November</option>
+                            <option value="11" id="11">December</option>
+                        </select>
+                        <input type="number" name="year" id="year" value="2019">
+                    </td>
+                    <td><i id="next" class="fas fa-arrow-circle-right"></i></td>
+                </tr>
+                <tr>
+                    <td><span>SU</span></td>
+                    <td><span>MN</span></td>
+                    <td><span>TU</span></td>
+                    <td><span>WD</span></td>
+                    <td><span>TH</span></td>
+                    <td><span>FR</span></td>
+                    <td><span>ST</span></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="wk1">
+                </tr>
+                <tr id="wk2">
+                </tr>
+                <tr id="wk3">
+                </tr>
+                <tr id="wk4">
+                </tr>
+                <tr id="wk5">
+                </tr>
+                <tr id="wk6">
+                </tr>
+            </tbody>
+        </table>
+        <input type="text" name="day" id="day" style="display: none;">
+    </div>
+</body>
+<script src="assets/js/calender.js"></script>
+</html>
