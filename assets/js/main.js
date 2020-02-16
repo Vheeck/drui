@@ -1,5 +1,6 @@
 let $ = (selector) => document.querySelector(selector);
 let _ = (selector) => document.querySelectorAll(selector);
+let c = (element) => document.createElement(element);
 
 let xmenus = _('.xmenu-content');
 let activexmenu = _('.xmenu.active');
@@ -31,8 +32,16 @@ let inputControls = _('.input-control input');
 inputControls.forEach(input => {
     input.addEventListener('focus', () => {
         input.parentElement.classList.add('focus');
+        input.parentElement.setAttribute('data-toggled', 'true');
     });
     input.addEventListener('blur', () => {
-        input.parentElement.classList.remove('focus');
+        if (input.value == '') {
+            input.parentElement.classList.remove('focus');
+            input.parentElement.removeAttribute('data-toggled', 'true');
+        }
+        else {
+            input.parentElement.classList.remove('focus');
+            input.parentElement.setAttribute('data-toggled', 'true');
+        }
     });
 });

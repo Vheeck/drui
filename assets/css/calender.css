@@ -1,9 +1,11 @@
 .calender {
+    position: absolute;
     width: 20em;
     border-radius: 8px;
     background-color: #dddddd;
     overflow: hidden;
     font-size: 0.8em;
+    z-index: 5;
 }
 .calender .clhead {
     background-color: #01396c;
@@ -22,7 +24,7 @@
 }
 .calender .clweeks {
     color: #01396c;
-    background-color: #ffffff;
+    background-color: #709cc9;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
 }
@@ -62,4 +64,9 @@
     outline: none;
     cursor: pointer;
     font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+.datePicker {
+    cursor: pointer;
 }
