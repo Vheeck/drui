@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/fonts.css">
     <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/modal.css">
     <link rel="stylesheet" href="assets/css/calender.css">
 </head>
 <body>
@@ -169,7 +170,16 @@
             </div>
         </div>
     </main>
+    <button id="myBtn">Show Modal</button>
+    <div id="myModal" class="modal">
+        <div id="content">
+            <span id="close">&times;</span>
+            <div id="body"></div>
+        </div>
+        <div class="donut" style="display: none;"></div>
+    </div>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/modal.js"></script>
     <script src="assets/js/calender.js"></script>
 </body>
 </html>

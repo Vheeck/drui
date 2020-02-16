@@ -14,6 +14,8 @@ let calenderInit = (btn) => {
 
     let calender = btn.parentElement.querySelector('.pickDate');
 
+    calender.innerHTML = '';
+
     calender.append(clhead(), clweeks(), cldays(month, year));
 }
 

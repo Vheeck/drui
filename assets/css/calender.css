@@ -23,7 +23,7 @@
     align-items: center;
 }
 .calender .clweeks {
-    color: #01396c;
+    color: #f2fef0;
     background-color: #709cc9;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
