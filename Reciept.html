@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. UI</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div>
+            <div>
+                <button class="search">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="nav-button">Edit Profile</button>
+                <button class="nav-button fill">Sign out</button>
+            </div>
+            <div>
+                <p class="nav-title">ACCOUNTING</p>
+            </div>
+        </div>
+    </nav>
+
+    <aside>
+        <div>
+            <div class="account-section">
+                <div class="label">
+                    <h4>T Hospital</h4>
+                </div>
+                <div class="hr">
+                    <hr>
+                </div>
+                <div class="account">
+                    <div>
+                        <div class="account-img"></div>
+                        <div class="account-info">
+                            <div>
+                                <h3>Welcome</h3>
+                            </div>
+                            <div>
+                                <p>Dr John Doe</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="divider">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="309 78 188 65" width="100%" height="100%"><defs><path d="M307.92 77.11L496.92 77.11L496.92 143.11L307.92 143.11L307.92 77.11Z" id="b16ud992L1"></path><path d="M307.92 143.11L496.92 143.11C483.73 122.94 452.23 113.22 402.42 113.96C352.6 114.69 321.1 102.41 307.92 77.11L307.92 143.11Z" id="adxrRUJv0"></path></defs><g><g><use xlink:href="#b16ud992L1" opacity="1" fill="#709cc9" fill-opacity="1"></use></g><g><use xlink:href="#adxrRUJv0" opacity="1" fill="#01396c" fill-opacity="1"></use></g></g></svg>
+            </div>
+            <div class="nav-tabs">
+                <ul>
+                    <li class="nav-tab">
+                        <div>
+                            <i class="fas fa-home"></i>
+                            <a href="index.html">Dashboard</a>
+                        </div>
+                    </li>
+                    <li class="nav-tab active xmenu">
+                        <div>
+                            <i class="fas fa-user-friends"></i>
+                            <a>Patient Registration</a>
+                        </div>
+                        <ul class="xmenu-content">
+                            <li class="nav-tab">
+                                <a href="patient-demo-graphical-details.html">Patient Demo-graphical Details</a>
+                            </li>
+                            <li class="nav-tab active">
+                                <a href="patient-vitals.html">Patient Vitals</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-tab">
+                        <div>
+                            <i class="fas fa-address-card"></i>
+                            <a href="#">Accounting</a>
+                        </div>
+                    </li>
+                    <li class="nav-tab">
+                        <div>
+                            <i class="fas fa-folder-open"></i>
+                            <a href="#">Reports</a>
+                        </div>
+                    </li>
+                    <li class="nav-tab">
+                        <div>
+                            <i class="fas fa-prescription-bottle-alt"></i>
+                            <a href="#">Pharmacy</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+
+    <main>
+        <div class="record lg">
+            <div class="block">
+                <div class="block label">
+                    <h3 class="text-center">Receipt</h3>
+                </div>
+                <div class="content">
+                    <div>
+                        <div class="set-view">
+                            <h4 class="span">Enter Patient Id to view previous receipts</h4>
+                            <select name="pharmacy" id="pharmacy" class="br-left">
+                                <option value="">Patient Id</option>
+                                <option value="">Pharmacy Records Records</option>
+                            </select>
+                            <button class="br-right">View</button>
+                        </div>
+                        <div class="hr">
+                            <hr>
+                        </div>
+                        <div>
+                            <h5 class="span">List of receipts for [Patient Name] with patient id [Patient Id]</h5>
+    
+                            <!-- Table Section -->
+                            <div class="inventory-list">
+                                <div class="table">
+                                    <div class="thead tr">
+                                        <span>S/N</span>
+                                        <span>
+                                            Patient Name </span>
+                                        <span>Receipt No. </span>
+                                        <span>Billing No. </span>
+                                        <span>Date </span>
+                                        <span>Details</span>
+                                    </div>
+                                    <div class="tr block">
+                                        <span>1</span>
+                                        <span>Tessy Amanda Rowland</span>
+                                        <span>09123466781</span>
+                                        <span>08012345678</span>
+                                    </div>
+                                    <div class="tr block">
+                                        <span>2</span>
+                                        <span>Tessy Nkechi Rowland</span>
+                                        <span>09123466781</span>
+                                        <span>08012345678</span>
+                                    </div>
+                                    <div class="tr block">
+                                        <span>3</span>
+                                        <span>Ade Bunmi Shola</span>
+                                        <span>07012456879</span>
+                                        <span>08012345678</span>
+                                    </div>
+                                    <div class="tr block">
+                                        <span>1</span>
+                                        <span>Tessy Amanda Rowland</span>
+                                        <span>09123466781</span>
+                                        <span>08012345678</span>
+                                    </div>
+                                    <div class="tr block">
+                                        <span>2</span>
+                                        <span>Tessy Nkechi Rowland</span>
+                                        <span>09123466781</span>
+                                        <span>08012345678</span>
+                                    </div>
+                                    <div class="tr block">
+                                        <span>3</span>
+                                        <span>Ade Bunmi Shola</span>
+                                        <span>07012456879</span>
+                                        <span>08012345678</span>
+                                    </div>
+                                    <div class="tr block">
+                                        <span>1</span>
+                                        <span>Tessy Amanda Rowland</span>
+                                        <span>09123466781</span>
+                                        <span>08012345678</span>
+                                    </div>
+                                    <div class="tr block">
+                                        <span>2</span>
+                                        <span>Tessy Nkechi Rowland</span>
+                                        <span>09123466781</span>
+                                        <span>08012345678</span>
+                                    </div>
+                                    <div class="tr block">
+                                        <span>3</span>
+                                        <span>Ade Bunmi Shola</span>
+                                        <span>07012456879</span>
+                                        <span>08012345678</span>
+                                    </div>
+                                    <div class="tr block">
+                                        <span>3</span>
+                                        <span>Ade Bunmi Shola</span>
+                                        <span>07012456879</span>
+                                        <span>08012345678</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Table Section -->
+
+                            <div class="page-nav text-center">
+                                <button class="br-left active">1</button>
+                                <button class="br-none">2</button>
+                                <button class="br-right">3</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
