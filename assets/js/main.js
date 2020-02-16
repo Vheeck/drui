@@ -18,11 +18,12 @@ let activatexmenu = () => {
                     xmenu.parentElement.dataset.toggled = 'true';
                     xmenu.classList.add('toggled');
                 }
-            });
-        });
+            })
+        })
     }
 
 }
+
 
 activatexmenu();
 activexmenu[0].click();
