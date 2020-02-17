@@ -98,74 +98,65 @@
     </aside>
 
     <main>
-        <div class="form">
+        <div class="list sm">
             <div class="block">
                 <div>
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="51 368 520 75" width="100%" height="100%"><defs><path d="M49.42 367.4L521.01 367.4C516.01 369.27 486.84 371.32 433.51 373.54C353.51 376.87 169.34 382.71 146.01 386.04C122.68 389.37 106.84 395.21 90.18 404.4C79.06 410.53 65.48 421.91 49.42 438.54L49.42 367.4Z" id="b5xxYBa8wW"></path><path d="M49.42 367.4L565.42 367.4L565.42 438.54L49.42 438.54L49.42 367.4Z" id="aObWTSjsz"></path></defs><g><g><use xlink:href="#b5xxYBa8wW" opacity="1" fill="#d2eaff" fill-opacity="1"></use></g><g><use xlink:href="#aObWTSjsz" opacity="1" fill="#36536c" fill-opacity="0"></use></g></g></svg>
-                </div>
-                <div class="header">
-                    <h3 class="text-center">Patient Demo-graphical Details</h3>
+                    <svg width="480" height="55" viewBox="0 0 480 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 5C0 2.23857 2.23858 0 5 0H431C431 0 364 41 215.5 20.5C67 0 0 55 0 55V5Z" fill="#D2E9FF"/>
+                    </svg>
                 </div>
                 <div class="content">
-                    <form>
-                        <p class="note">Fields with * are required</p>
-                        <div class="inputs-group">
-                            <div class="input-control grid-col-12">
-                                <label for="firstname">Firstname *</label>
-                                <input type="text" name="firstname" id="firstname" required autofocus>
-                            </div>
-                            <div class="input-control grid-col-12">
-                                <label for="lastname">Lastname *</label>
-                                <input type="text" name="lastname" id="lastname" required>
-                            </div>
-                            <div class="input-control grid-col-12">
-                                <label for="home-address">Home address *</label>
-                                <input type="text" name="home-address" id="home-address" required>
-                            </div>
-                            <div class="input-control grid-col-12">
-                                <label for="email">Email</label>
-                                <input type="email" name="email" id="email">
-                            </div>
-                            <div class="input-control grid-col-12">
-                                <label for="phone">Phone number *</label>
-                                <input type="tel" name="phone" id="phone" required>
-                            </div>
-                            <div class="input-control grid-col-12">
-                                <label for="phone2">Phone number 2 (Optional)</label>
-                                <input type="tel" name="phone2" id="phone2">
-                            </div>
-                            <div class="input-control grid-col-12 no-focus">
-                                <label for="date-of-birth">Date of birth *</label>
-                                <div class="input date-input datePicker">
-                                    <input type="text" class="date" name="date-of-birth" id="date-of-birth" required>
-                                    <div class="input-i">
-                                        <i class="far fa-calendar"></i>
-                                    </div>
+                    <div>
+                        <!-- Table Section -->
+                        <div class="stock-list">
+                            <div class="table">
+                                <div class="thead tr">
+                                    <span>S/N</span>
+                                    <span>Drug</span>
+                                    <span>Quantity</span>
+                                    <span>Price</span>
+                                    <span>Action</span>
                                 </div>
-                                <div class="pickDate calender"></div>
-                            </div>
-                            <div class="input-control grid-col-12 no-focus">
-                                <label for="gender">Gender *</label>
-                                <div>
-                                    <input type="radio" name="gender" id="male">
-                                    <label for="male">Male</label>
-                                    <input type="radio" name="gender" id="female">
-                                    <label for="female">Female</label>
+                                <div class="tr block">
+                                    <span>1</span>
+                                    <span>Paracetamol</span>
+                                    <span>3</span>
+                                    <span>N 300</span>
+                                    <span>
+                                        <i class="fas fa-prescription-bottle-alt"></i>
+                                    </span>
                                 </div>
-                            </div>
-                            <div class="input-control grid-col-12">
-                                <label for="genotype">Employer</label>
-                                <input type="text" name="genotype" id="genotype">
-                            </div>
-                            <div class="input-control grid-col-12">
-                                <label for="genotype">Insurance Information (HMO/NHIS) *</label>
-                                <input type="text" name="genotype" id="genotype">
-                            </div>
-                            <div class="input-control grid-col-12">
-                                <input type="submit" name="submit" id="submit" value="Save">
+                                <div class="tr block">
+                                    <span>2</span>
+                                    <span>Ibuprofen</span>
+                                    <span>3</span>
+                                    <span>N 1300</span>
+                                    <span>
+                                        <i class="fas fa-prescription-bottle-alt"></i>
+                                    </span>
+                                </div>
+                                <div class="tr block">
+                                    <span>3</span>
+                                    <span>Amoxil</span>
+                                    <span>2</span>
+                                    <span>N 1000</span>
+                                    <span>
+                                        <i class="fas fa-prescription-bottle-alt"></i>
+                                    </span>
+                                </div>
+                                <div class="thead tr">
+                                    <span></span>
+                                    <span>Total</span>
+                                    <span></span>
+                                    <span>N1600</span>
+                                    <span></span>
+                                </div>
                             </div>
                         </div>
-                    </form>
+                        <!-- End Table Section -->
+                        <button>Pay with Cash</button>
+                        <button>Pay with Card</button>
+                    </div>
                 </div>
             </div>
         </div>

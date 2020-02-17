@@ -1,17 +1,25 @@
-var modal = $('#myModal');
-var btn = $('#myBtn');
-var span = $('.close');
+// let modal;
+let modalBtn = _('.modal-button');
 
-btn.onclick = function () {
-    modal.style.display = "block";
-}
+let modalContent = $('#myModal #content');
 
-span.onclick = function () {
-    modal.style.display = "none";
-}
 
-window.onclick = function () {
-    if (event.target == modal) {
+modalBtn.forEach(btn => {
+    let id = btn.dataset.target;
+    let modal = $('#' + id);
+
+    btn.addEventListener('click', () => {
+        modal.style.display = "flex";
+    });
+
+    modal.querySelector('.close').onclick = () => {
         modal.style.display = "none";
+    };
+
+    window.onclick = () => {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
     }
-}
+
+});

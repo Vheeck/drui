@@ -616,7 +616,7 @@ input[type="submit"]:hover, .button:hover {
     transition: 500ms;
 }
 
-.record {
+.record, .list {
     margin: auto;
 }
 
@@ -631,32 +631,32 @@ input[type="submit"]:hover, .button:hover {
     padding: 1em 2em;
 }
 
-.record .content {
+.record .content, .list .content {
     padding: 0em 2em 2em 2em;
 }
 
-.record .content > div > * {
+.record .content > div > *, .list .content > div > * {
     margin: 1.4em 0em;
 }
 
-.record .hr > hr {
+.record .hr > hr, .list .hr > hr {
     border-color: #343434 !important;
     border-width: 0.1px;
 }
 
-.record.sm {
-    width: 55%;
+main > .sm {
+    width: 52%;
 }
 
-.record.md {
+main > .md {
     width: 70%;
 }
 
-.record.lg {
+main > .lg {
     width: 85%;
 }
 
-.record .tr {
+.record .tr, .list .tr {
     padding: 1em;
     border-radius: 0px;
 }
@@ -678,6 +678,12 @@ input[type="submit"]:hover, .button:hover {
 }
 
 .set-view select {
+    border-radius: 0px;
+    margin: 0em 0.4em;
+    padding: 0.8em;
+}
+
+.set-view input {
     border-radius: 0px;
     margin: 0em 0.4em;
     padding: 0.8em;
@@ -716,6 +722,21 @@ button.br-right {
     border-radius: 0px 6px 6px 0px;
 }
 
+input.br-left {
+    border-radius: 6px 0px 0px 6px;
+    max-width: max-content;
+}
+
+input.br-none {
+    border-radius: 0px;
+    max-width: max-content;
+}
+
+input.br-right {
+    border-radius: 0px 6px 6px 0px;
+    max-width: max-content;
+}
+
 .span {
     display: inline-block;
     width: max-content;
@@ -734,18 +755,27 @@ button.br-right {
     padding: 0.7em;
 }
 
-.inventory-list .table > .tr > span:nth-child(1) {
-    grid-column: span 1;
+.inventory-list .table > .tr {
+    grid-template-columns: 1fr 4fr 4fr 3fr;
 }
 
-.inventory-list .table > .tr > span:nth-child(2) {
-    grid-column: span 4;
+/*  */
+
+.stock-list .table {
+    grid-gap: 0.4em;
 }
 
-.inventory-list .table > .tr > span:nth-child(3) {
-    grid-column: span 4;
+.stock-list .table .thead {
+    padding-bottom: 0em;
 }
 
-.inventory-list .table > .tr > span:nth-child(4) {
-    grid-column: span 3;
+.stock-list .table > .tr.block {
+    box-shadow: 0px 0px 6px 0px #aaaaaa !important;
+    padding: 0.7em;
 }
+
+.stock-list .table > .tr {
+    grid-template-columns: 1fr 4fr 4fr 3fr 3fr;
+}
+
+/*  */

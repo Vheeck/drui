@@ -12,11 +12,15 @@ let calenderInit = (btn) => {
     month = now.getMonth();
     year = now.getFullYear();
 
-    let calender = btn.parentElement.querySelector('.pickDate');
+    // let calender = c('div'); calender.classList.add('pickDate', 'calender'); calender.append(clhead(), clweeks(), cldays(month, year));
 
-    calender.innerHTML = '';
+    modalContent.innerHTML = '';
 
-    calender.append(clhead(), clweeks(), cldays(month, year));
+    modalContent.classList.add('pickDate', 'calender'); modalContent.append(clhead(), clweeks(), cldays(month, year));
+
+    // modalContent.append(calender);
+
+    modalBtn.click();
 }
 
 

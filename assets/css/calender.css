@@ -1,8 +1,8 @@
 .calender {
-    position: absolute;
-    width: 20em;
+    /* position: absolute; */
+    width: 25em !important;
     border-radius: 8px;
-    background-color: #dddddd;
+    background-color: #dddddd !important;
     overflow: hidden;
     font-size: 0.8em;
     z-index: 5;
@@ -35,6 +35,8 @@
     padding: 25% 0px;
     font-weight: bold;
 }
+
+
 .calender .cldays {
     color: #444444;
     display: grid;
@@ -56,6 +58,28 @@
 .calender .cldays > div:nth-child(1) {
     grid-column: 2/3;
 }
+
+
+.calender .clmonths {
+    color: #444444;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+.calender .clmonths > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    color: #888888;
+    padding: 25% 5%;
+    cursor: pointer;
+}
+.calender .clmonths > div:hover {
+    background-color: #eeeeee;
+}
+
+
 .calender button {
     background: none;
     border: none;
