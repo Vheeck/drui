@@ -33,7 +33,7 @@
     color: #ffffff;
     border-color: #2572ba;
     border-style: solid;
-    border-width: 2px;
+    border-width: 1px;
     border-radius: 6px;
     width: max-content;
     padding: 0.8em 1em;
@@ -63,6 +63,11 @@
 .prompt.no-fill {
     background-color: unset !important;
     color: #2572ba !important;
+}
+
+.prompt.no-fill:hover, .prompt.no-fill:focus {
+    background-color: #2572ba !important;
+    color: #ffffff !important;
 }
 
 .modal #content.modal-sm > * {

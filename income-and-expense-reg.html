@@ -98,31 +98,46 @@
     </aside>
 
     <main>
-        <div class="list sm">
+        <div class="list lg">
             <div class="block">
                 <div>
-                    <svg width="480" height="55" viewBox="0 0 480 55" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 5C0 2.23857 2.23858 0 5 0H431C431 0 364 41 215.5 20.5C67 0 0 55 0 55V5Z" fill="#D2E9FF"/>
+                    <svg width="832" height="31" viewBox="0 0 832 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0.312142H694C509.5 6.81215 452.758 43.7368 347 24.8121C241.242 5.88747 82.4291 -1.69118 0 0.312142Z" fill="#D2E9FF"/>
                     </svg>
-                </div>
-                <div class="label text-center">
-                    <i class="fas fa-cart-plus"></i>
-                    <h3 class="text-inline">Drug cart</h3>
-                    <span class="badge">3</span>
                 </div>
                 <div class="content">
                     <div>
+                        <div class="label">
+                            <h3 class="text">Income and expense register</h3>
+                        </div>
+                        <div class="set-view">
+                            <p class="span">Select: </p>
+                            <select name="pharmacy" id="pharmacy" class="br-left">
+                                <option value="">Year</option>
+                                <option value="">2020</option>
+                            </select>
+                            <select name="pharmacy" id="pharmacy" class="br-none">
+                                <option value="">Month</option>
+                                <option value="">2020</option>
+                            </select>
+                            <button class="br-right">Search</button>
+
+                            <input type="text" name="search" id="search" class="span" placeholder="Search" style="float: right; border-radius: 6px;">
+                        </div>
+                        <div class="hr">
+                            <hr>
+                        </div>
+    
                         <!-- Table Section -->
                         <div class="stock-list">
                             <div class="table">
                                 <div class="thead tr">
                                     <span>S/N</span>
-                                    <span>Drug</span>
-                                    <span>Quantity</span>
-                                    <span>Price</span>
-                                    <span>Action</span>
+                                    <span>Products/Services </span>
+                                    <span>Income</span>
+                                    <span>Expense</span>
                                 </div>
-                                <div class="tr block">
+                                <div class="tr colored">
                                     <span>1</span>
                                     <span>Paracetamol</span>
                                     <span>3</span>
@@ -131,7 +146,7 @@
                                         <i class="fas fa-prescription-bottle-alt"></i>
                                     </span>
                                 </div>
-                                <div class="tr block">
+                                <div class="tr colored">
                                     <span>2</span>
                                     <span>Ibuprofen</span>
                                     <span>3</span>
@@ -140,7 +155,7 @@
                                         <i class="fas fa-prescription-bottle-alt"></i>
                                     </span>
                                 </div>
-                                <div class="tr block">
+                                <div class="tr colored">
                                     <span>3</span>
                                     <span>Amoxil</span>
                                     <span>2</span>
@@ -159,9 +174,11 @@
                             </div>
                         </div>
                         <!-- End Table Section -->
-                        <div class="text-right">
-                            <button class="button-lg no-fill">Pay with Cash</button>
-                            <button class="button-lg fill">Pay with Card</button>
+
+                        <div class="page-nav text-center">
+                            <button class="br-left active">1</button>
+                            <button class="br-none">2</button>
+                            <button class="br-right">3</button>
                         </div>
                     </div>
                 </div>
@@ -182,10 +199,10 @@
                 </svg>
             </div>
             <div class="modal-head text-center">
-                <h2>Cancelled !!!</h2>
+                <h2>Payment Cancelled !!!</h2>
             </div>
             <div class="modal-messages text-center">
-                <p>Drug is still save in cart...</p>
+                <p>Payment for drugs was Cancelled successfully</p>
             </div>
             <div class="modal-btn text-center">
                 <button class="close">Ok</button>
@@ -201,12 +218,15 @@
                     <circle cx="46.5" cy="78.5" r="2.5" fill="#F8BE86"/>
                 </svg>
             </div>
+            <div class="modal-head text-center">
+                <h2>Are you sure?</h2>
+            </div>
             <div class="modal-messages text-center bold">
-                <p>Are you sure you want to delete drug from your cart?</p>
+                <p>Please make sure your POS transaction is successful before clicking on the confirm button. Once the Confirm button is click, it cannot be undone.</p>
             </div>
             <div class="modal-btn text-center">
-                <button class="prompt no-fill close">No, cancel pls...</button>
-                <button class="prompt">Yes, delete it!</button>
+                <button class="prompt no-fill close">No, Cancel Payment</button>
+                <button class="prompt">Yes, Confirm Payment</button>
             </div>
         </div>
     </div>
@@ -219,10 +239,10 @@
                 </svg>                    
             </div>
             <div class="modal-head text-center">
-                <h2>Deleted !!!</h2>
+                <h2>Payment Completed !!!</h2>
             </div>
             <div class="modal-messages text-center">
-                <p>Drugs was successfully deleted from cart...</p>
+                <p>Payment for drugs was completed successfully</p>
             </div>
             <div class="modal-btn text-center">
                 <button class="close">Ok</button>
