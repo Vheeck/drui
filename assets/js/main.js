@@ -25,8 +25,8 @@ let activatexmenu = () => {
 }
 
 
-activatexmenu();
-activexmenu[0].click();
+// activatexmenu();
+// activexmenu[0].click();
 
 let inputControls = _('.input-control input');
 
